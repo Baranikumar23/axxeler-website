@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work With Us | Axxeler</title>
+    <meta name="description" content="Ready to automate? Stop wasting time on manual tasks. Let's build the AI infrastructure your agency needs to dominate the market.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css?v=2">
+    
+    <!-- Theme Script (placed here to prevent flash of unstyled content) -->
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'light' || (!savedTheme && !systemPrefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="Asset 2.png" alt="Axxeler Logo" id="nav-logo" class="logo-img">
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#expertise">Expertise</a>
+                <a href="index.html#process">Why Us</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#testimonials">Testimonials</a>
+            </nav>
+            
+            <div class="header-right-actions" style="display: flex; align-items: center; gap: 1rem;">
+                <div class="nav-actions" style="display: flex; align-items: center; gap: 1rem;">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </button>
+                    <a href="work-with-us.html" class="btn btn-primary nav-cta">Get Started</a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobile-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html#services" class="mobile-link">Services</a>
+            <a href="index.html#expertise" class="mobile-link">Expertise</a>
+            <a href="index.html#process" class="mobile-link">Why Us</a>
+            <a href="index.html#about" class="mobile-link">About</a>
+            <a href="index.html#testimonials" class="mobile-link">Testimonials</a>
+            <a href="work-with-us.html" class="btn btn-primary mobile-cta">Get Started</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px; min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+        <!-- CTA / Lead Form Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to <span class="text-gradient">Automate?</span></h2>
+                    <p class="section-desc">Stop wasting time on manual tasks. Let's build the AI infrastructure your agency needs to dominate the market.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Based in</h4>
+                                <p>Chennai, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>helpaxxeler@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Working globally</h4>
+                                <p>Clients across AU, US, UK & EU</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper glass-panel">
+                    <form id="lead-form" class="lead-form" action="https://formspree.io/f/mvzlgnvz" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Acme Corp">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company-size">Company Size</label>
+                            <select id="company-size" name="company-size" required>
+                                <option value="" disabled selected>Select size</option>
+                                <option value="1-10">1-10 employees</option>
+                                <option value="11-50">11-50 employees</option>
+                                <option value="51-200">51-200 employees</option>
+                                <option value="201+">201+ employees</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="painpoint">What’s slowing your business growth right now?</label>
+                            <select id="painpoint" name="painpoint" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="converting_leads">Converting Leads into Customers</option>
+                                <option value="customer_conversations">Managing Customer Conversations</option>
+                                <option value="manual_work">Too Much Manual Work</option>
+                                <option value="disorganized_crm">Disorganized Systems / CRM</option>
+                                <option value="scaling_ai">Scaling with Automation & AI</option>
+                                <option value="not_sure">Not Sure (Need Expert Guidance)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Budget Range</label>
+                            <div class="budget-options">
+                                <label class="budget-option">
+                                    <input type="radio" name="budget" value="15k-50k" required>
+                                    <span>$15K - $50K</span>
+                                </label>
+                                <label class="budget-option">
+                                    <input type="radio" name="budget" value="50k-150k">
+                                    <span>$50K - $150K</span>
+                                </label>
+                                <label class="budget-option">
+                                    <input type="radio" name="budget" value="150k-500k">
+                                    <span>$150K - $500K</span>
+                                </label>
+                                <label class="budget-option">
+                                    <input type="radio" name="budget" value="not-sure">
+                                    <span>Not Sure Yet</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="details">Tell Us About Your Goals</label>
+                            <textarea id="details" name="details" rows="4" placeholder="Tell us more about your current process and goals..." style="width: 100%; padding: 1rem; resize: vertical;"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                            Request AI Audit
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                        
+                        <div class="form-status" id="form-status"></div>
+
+                        <p class="form-note" style="margin-top: 1rem; text-align: center; font-size: 0.85rem; color: var(--text-muted);">
+                            🔒 Your info is safe. We never share your data. Expect a reply within 24 hours.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="Asset 2.png" alt="Axxeler Logo" class="footer-logo logo-img">
+                <p>Empowering businesses with intelligent automation.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Solutions</h4>
+                    <a href="index.html#services">Workflow Automation</a>
+                    <a href="index.html#services">Autonomous AI Agents</a>
+                    <a href="index.html#services">Enterprise AI Systems</a>
+                    <a href="index.html#services">AI Website & Funnel</a>
+                    <a href="index.html#services">WhatsApp Automation</a>
+                    <a href="index.html#services">AI Marketing Solutions</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; <span id="year"></span> Axxeler.in. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/company/axxeler/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://www.instagram.com/axxeler.in/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://www.youtube.com/@axxeler" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Modal -->
+    <div id="thank-you-modal" class="modal-overlay">
+        <div class="modal-content glass-panel text-center">
+            <div class="modal-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3 class="modal-title">Request Received!</h3>
+            <p class="modal-desc">Thank you for reaching out. Our team will review your details and get back to you within 24 hours.</p>
+            <button class="btn btn-primary" id="close-modal-btn" style="width: 100%; margin-top: 1rem;">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
