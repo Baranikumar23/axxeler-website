@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axxeler | AI Automation Agency</title>
+    <meta name="description"
+        content="Axxeler is a premier AI Automation Agency helping businesses scale with intelligent workflows, custom chatbots, and predictive analytics.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=2">
+
+    <!-- Theme Script (placed here to prevent flash of unstyled content) -->
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'light' || (!savedTheme && !systemPrefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="Asset 2.png" alt="Axxeler Logo" id="nav-logo" class="logo-img">
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="#services">Services</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#process">Why Us</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Testimonials</a>
+            </nav>
+
+            <div class="header-right-actions" style="display: flex; align-items: center; gap: 1rem;">
+                <div class="nav-actions" style="display: flex; align-items: center; gap: 1rem;">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="work-with-us.html" class="btn btn-primary nav-cta">Get Started</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobile-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#expertise" class="mobile-link">Expertise</a>
+            <a href="#process" class="mobile-link">Why Us</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#testimonials" class="mobile-link">Testimonials</a>
+            <a href="work-with-us.html" class="btn btn-primary mobile-cta">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">Next-Gen AI Automation</div>
+                    <h1 class="hero-title">Automate the Impossible with <span class="text-gradient">Axxeler.in</span>
+                    </h1>
+                    <p class="hero-subtitle">We build intelligent workflows, custom LLM applications, and predictive
+                        agents to scale your business operations 10x faster.</p>
+                    <div class="hero-actions">
+                        <a href="work-with-us.html" class="btn btn-primary btn-lg">Book a Free Audit</a>
+                        <a href="#services" class="btn btn-secondary btn-lg">Explore Solutions</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="glass-panel main-dashboard">
+                        <div class="panel-header">
+                            <div class="dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="panel-title">AI Agent Status</div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="stat-row">
+                                <span>Tasks Automated</span>
+                                <span class="stat-value text-gradient">12,405</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Efficiency Gain</span>
+                                <span class="stat-value text-green">+340%</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Active Agents</span>
+                                <span class="stat-value text-blue">8 Nodes</span>
+                            </div>
+
+                            <div class="chart-mock">
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 50%"></div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="bar" style="height: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Section -->
+        <div class="scrolling-marquee">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span>&bull; LLM INTEGRATION</span>
+                    <span>&bull; DATA INTELLIGENCE</span>
+                    <span>&bull; PROCESS AUTOMATION</span>
+                    <span>&bull; AI CONSULTING</span>
+                    <span>&bull; TECH SOLUTIONS</span>
+                    <span>&bull; AI AUTOMATION</span>
+                    <span>&bull; INTELLIGENT AGENTS</span>
+                    <span>&bull; WORKFLOW OPTIMIZATION</span>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <span>&bull; LLM INTEGRATION</span>
+                    <span>&bull; DATA INTELLIGENCE</span>
+                    <span>&bull; PROCESS AUTOMATION</span>
+                    <span>&bull; AI CONSULTING</span>
+                    <span>&bull; TECH SOLUTIONS</span>
+                    <span>&bull; AI AUTOMATION</span>
+                    <span>&bull; INTELLIGENT AGENTS</span>
+                    <span>&bull; WORKFLOW OPTIMIZATION</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Intelligent <span class="text-gradient">Solutions</span></h2>
+                    <p class="section-desc">Tailored AI tools designed to eliminate manual work and supercharge your
+                        team's output.</p>
+                </div>
+
+                <div class="grid services-grid">
+                    <!-- Service 1 -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </div>
+                        <h3>Workflow Automation</h3>
+                        <p>Connect your fragmented software stack. We build Zapier/Make integrations and custom scripts
+                            that move data seamlessly.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <h3>Autonomous AI Agents</h3>
+                        <p>Deploy intelligent agents that work 24/7 to execute complex tasks, manage customer inquiries,
+                            and perform research autonomously.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="m19 9-5 5-4-4-3 3" />
+                            </svg>
+                        </div>
+                        <h3>Enterprise AI Systems</h3>
+                        <p>End-to-end AI infrastructure tailored to your business needs, integrating custom LLMs
+                            seamlessly into your existing workflows.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>AI Website & Funnel</h3>
+                        <p>High-converting, intelligent websites and sales funnels designed to turn visitors into leads
+                            on autopilot.</p>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>WhatsApp Automation</h3>
+                        <p>Engage your customers where they are. We build intelligent WhatsApp flows for customer
+                            support, lead nurturing, and sales.</p>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="glass-card service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>AI Marketing Solutions</h3>
+                        <p>Supercharge your outreach with intelligent CRM integrations, automated lead nurturing, and
+                            instant auto-lead responses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise / Features Section -->
+        <section id="expertise" class="section expertise-section">
+            <div class="container">
+                <div class="expertise-layout">
+                    <div class="expertise-content">
+                        <h2 class="section-title">The Axxeler <span class="text-gradient">Advantage</span></h2>
+                        <p class="section-desc">We don't just write code; we architect autonomous systems that scale
+                            with you.</p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Rapid Deployment</h4>
+                                    <p>Go from concept to production-ready AI tools in weeks, not months.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Enterprise Security</h4>
+                                    <p>Your data stays yours. We implement robust privacy controls and localized models
+                                        where needed.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Continuous Optimization</h4>
+                                    <p>We monitor, maintain, and upgrade your AI systems to ensure peak performance as
+                                        technology evolves.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-visual">
+                        <div class="code-window glass-panel">
+                            <div class="panel-header">
+                                <div class="dots"><span></span><span></span><span></span></div>
+                                <div class="panel-title">agent.py</div>
+                            </div>
+                            <div class="panel-body code-content">
+                                <pre><code><span class="keyword">import</span> AxxelerAI
+
+<span class="comment"># Initialize autonomous agent</span>
+agent = AxxelerAI.create_agent(
+    role=<span class="string">"Customer Success"</span>,
+    knowledge_base=<span class="string">"company_wiki.pdf"</span>
+)
+
+<span class="keyword">def</span> <span class="function">handle_request</span>(user_query):
+    <span class="comment"># Analyze intent & fetch context</span>
+    context = agent.retrieve(user_query)
+    
+    <span class="comment"># Generate perfect response</span>
+    response = agent.generate(
+        query=user_query,
+        context=context
+    )
+    
+    <span class="keyword">return</span> response
+    
+<span class="comment"># System online. Zero human intervention needed.</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="section process-section">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <h2 class="section-title">How We <span class="text-gradient">Work</span></h2>
+                    <p class="section-desc">A streamlined, risk-free process to get your AI systems running fast.</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-card glass-card fade-in">
+                        <div class="process-number">01</div>
+                        <h3>Discovery & Audit</h3>
+                        <p>We analyze your current tech stack and identify high-ROI bottlenecks that can be automated.
+                        </p>
+                    </div>
+
+                    <div class="process-card glass-card fade-in" style="transition-delay: 0.1s;">
+                        <div class="process-number">02</div>
+                        <h3>Custom Architecture</h3>
+                        <p>Our engineers design a secure, scalable AI solution tailored specifically to your company's
+                            workflows.</p>
+                    </div>
+
+                    <div class="process-card glass-card fade-in" style="transition-delay: 0.2s;">
+                        <div class="process-number">03</div>
+                        <h3>Deployment & Training</h3>
+                        <p>We deploy the systems, train your team, and provide ongoing optimization to ensure peak
+                            performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section id="industries" class="section industries-section">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <h2 class="section-title">Industries We <span class="text-gradient">Serve</span></h2>
+                    <p class="section-desc">Our AI solutions are adaptable across multiple sectors, driving efficiency
+                        wherever data lives.</p>
+                </div>
+
+                <div class="industries-grid fade-in">
+                    <div class="industry-pill">Real Estate</div>
+                    <div class="industry-pill">Coaches & Consultancy</div>
+                    <div class="industry-pill">SaaS & Software</div>
+                    <div class="industry-pill">Healthcare</div>
+                    <div class="industry-pill">Finance & FinTech</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section testimonials-section">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <h2 class="section-title">Client <span class="text-gradient">Success</span></h2>
+                    <p class="section-desc">See how we've helped agencies and enterprises scale with AI.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-card fade-in">
+                        <p class="testimonial-quote">"Axxeler.in completely transformed our support workflow. The AI
+                            agents they deployed handle 85% of our tier-1 tickets flawlessly."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>Sarah Jenkins</h4>
+                                <p>VP of Operations, TechFlow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card fade-in" style="transition-delay: 0.1s;">
+                        <p class="testimonial-quote">"We cut our data entry time by 90%. The custom AI system they built
+                            paid for itself in the first two months."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Marcus Chen</h4>
+                                <p>Founder, Elevate Logistics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card fade-in" style="transition-delay: 0.2s;">
+                        <p class="testimonial-quote">"The WhatsApp automation they implemented increased our lead
+                            conversion rate by 40%. Their team truly understands our market."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>Arvind Krishnan</h4>
+                                <p>Director of Sales, Nexus Corp</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card fade-in" style="transition-delay: 0.3s;">
+                        <p class="testimonial-quote">"Axxeler didn't just build us a website; they built an entire
+                            autonomous lead engine. Exceptional service and incredible ROI."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">P</div>
+                            <div class="author-info">
+                                <h4>Priya Rajagopal</h4>
+                                <p>Managing Partner, Vertex Consultants</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card fade-in" style="transition-delay: 0.4s;">
+                        <p class="testimonial-quote">"Axxeler's AI agents drastically improved our customer response
+                            times. Their team was professional, fast, and delivered beyond our expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">D</div>
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <p>CTO, CloudSync</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card fade-in" style="transition-delay: 0.5s;">
+                        <p class="testimonial-quote">"We were struggling with manual data processing until Axxeler
+                            stepped in. Their automated workflows have saved us hundreds of hours each month."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">E</div>
+                            <div class="author-info">
+                                <h4>Elena Rodriguez</h4>
+                                <p>Operations Manager, FinTech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container about-container">
+                <div class="about-visual fade-in">
+                    <div class="about-grid-bg">
+                        <!-- Huge A Logo -->
+                        <img src="Asset 3.png" alt="Axxeler Icon" class="logo-a-shape" style="object-fit: contain;">
+
+                        <!-- Floating badges -->
+                        <div class="floating-badge badge-top-right glass-card">
+                            <h4>3 yrs</h4>
+                            <p>Deep AI Expertise</p>
+                            <span class="badge-dot"></span>
+                        </div>
+
+                        <div class="floating-badge badge-bottom-left glass-card">
+                            <h4>50+</h4>
+                            <p>Projects Delivered</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content fade-in">
+                    <div class="badge"
+                        style="background: transparent; border: none; padding: 0; color: var(--primary-purple); font-size: 0.8rem; margin-bottom: 1rem; letter-spacing: 2px; font-weight: 700;">
+                        ABOUT AXXELER</div>
+                    <h2 class="section-title" style="margin-bottom: 2rem;">We're Obsessed With Making AI Actually Work
+                    </h2>
+
+                    <p class="about-desc">Axxeler is an AI automation agency built by engineers and operators who've
+                        been in the trenches. We don't just consult — we build, deploy, and stand behind every system we
+                        create.</p>
+                    <p class="about-desc">Our team combines deep AI expertise with real business understanding. Every
+                        solution we build is designed to solve real problems — not to look impressive in a demo.</p>
+
+                    <ul class="about-list">
+                        <li>
+                            <div class="list-number">01</div>
+                            <div class="list-text">
+                                <h4>Outcomes Over Features</h4>
+                                <p>We measure success by ROI and business impact, not by the number of features
+                                    deployed.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-number">02</div>
+                            <div class="list-text">
+                                <h4>Built to Last</h4>
+                                <p>We build production-grade systems with proper architecture, documentation, and
+                                    monitoring.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-number">03</div>
+                            <div class="list-text">
+                                <h4>Radical Transparency</h4>
+                                <p>No black boxes. You'll always know what your AI is doing and why.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="section final-cta-section text-center">
+            <div class="container fade-in">
+                <div class="badge"
+                    style="background: transparent; border: none; color: var(--primary-purple); font-size: 0.8rem; letter-spacing: 2px; font-weight: 700;">
+                    READY TO START?</div>
+                <h2 class="cta-massive-title">Let's Build<br>Something<br><span
+                        class="text-gradient">Extraordinary</span><br>Together</h2>
+
+                <p class="cta-subtitle">Book a free 30-minute discovery call. We'll map out exactly how AI can transform
+                    your business — no fluff, just clarity.</p>
+
+                <a href="work-with-us.html" class="btn btn-primary btn-lg cta-btn">Book Free Discovery Call &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="Asset 2.png" alt="Axxeler Logo" class="footer-logo logo-img">
+                <p>Empowering businesses with intelligent automation.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Solutions</h4>
+                    <a href="#services">Workflow Automation</a>
+                    <a href="#services">Autonomous AI Agents</a>
+                    <a href="#services">Enterprise AI Systems</a>
+                    <a href="#services">AI Website & Funnel</a>
+                    <a href="#services">WhatsApp Automation</a>
+                    <a href="#services">AI Marketing Solutions</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; <span id="year"></span> Axxeler.in. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/axxeler/" aria-label="LinkedIn" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/axxeler.in/" aria-label="Instagram" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@axxeler" aria-label="YouTube" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z">
+                        </path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
